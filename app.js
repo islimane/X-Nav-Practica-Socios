@@ -31,7 +31,7 @@ $(document).ready(function() {
 	$.getJSON("update.json", function(data){
 		updateData = data;
 		if(updateData.length>0){
-			$('#btn').html('<button id="showMsgs">' + updateData.length + ' New Messages</button>');
+			$('#numOfNewMsgs').html(updateData.length);
 		}
 	});
 
@@ -48,6 +48,9 @@ $(document).ready(function() {
 		}
 		$("#newMsgs").replaceWith(msg);
 		setUserImgs(users);
+		if(updateData.length==0){
+			$("#newMsgs").html("<p>No messeges to display</p>");
+		}
 	});
 
 	var users = ['subject1', 'subject2', 'subject3', 'subject4', 'islimane'];
