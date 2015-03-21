@@ -39,6 +39,7 @@ $(document).ready(function() {
 		var msg = "";
 		for(var i=0;i<updateData.length;i+=1){
 			msg += '<div class="msg">';
+			msg += '<spam class="date">' + updateData[i].Fecha + '</spam>';
 			msg += '<p class="text">';
 			msg += '<img class="' + updateData[i].Autor + '" height="42" width="42">@';
 			msg += updateData[i].Autor + ': ' + updateData[i].Titulo + '<p>';

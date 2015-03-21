@@ -5,22 +5,32 @@
 		<title>Socios</title>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css" title="style" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" title="style"/>
 	</head>
 	<body>
 		<h1 class="title">Socios</h1>
-		<div id="update">
-			<h2 class="title">Update</h2>
-			<div id="btn"></div>
-			<div id="newMsgs"></div>
-		</div>
-		<div class="timeline">
-			<h2 class="title">Time Line</h2>
-			<div id="log"><div>
-		</div>
-		<div class="myline">
-			<h2 class="title">My Line</h2>
-			<div id="mylog"><div>
+		<div class="container">
+			<div id="main"  class="row">
+				<div class="timeline col-md-4">
+					<h2 class="title">Time Line</h2>
+					<div id="log"></div>
+				</div>
+				<div class="myline col-md-4">
+					<h2 class="title">My Line</h2>
+					<div id="mylog"></div>
+				</div>
+				<div id="update" class="col-md-4">
+					<h2 class="title">Update</h2>
+					<div id="btn"></div>
+					<div id="newMsgs"></div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
